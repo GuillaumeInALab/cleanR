@@ -1,12 +1,13 @@
 Package: cleanR
 Title: Creates a clean folder structure for your R project
-Version: 1.0.0.9000
+Version: 1.0.1
 Authors@R: 
     person(given = "Guillaume P.",
            family = "Andrieu",
            role = c("aut", "cre"),
            email = "guillaume.andrieu@inserm.com")
 Description: Creates a clean infrastructure with a classical folder organization to keep your R project tidy.
+Depends: R (>= 3.6.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
