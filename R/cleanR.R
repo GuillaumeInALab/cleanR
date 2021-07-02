@@ -44,7 +44,12 @@ organize <- function(path, proj = TRUE){
     highlight: github
 ---
 
-Version 0.0.1\n\n")
+Version 0.0.1
+
+**R version**: \"`r R.version.string`\"
+**Bioconductor version**: \"`r BiocManager::version()`\"
+**Package**: \"`r packageVersion()`\"
+     ")
 
  cat("
 ```{r setup, include=FALSE}
