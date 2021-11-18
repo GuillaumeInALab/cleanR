@@ -25,5 +25,4 @@ A beautifully organized project folder
 organize("myProject")
 
 organize("myProject", proj = F)
-
 *Does not create a RStudio project*
