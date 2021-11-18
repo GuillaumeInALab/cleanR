@@ -22,7 +22,7 @@ A beautifully organized project folder
 
 - Examples
 
-organize("myProject")
+* organize("myProject")
 
-organize("myProject", proj = F)
+* organize("myProject", proj = F)
 *Does not create a RStudio project*
