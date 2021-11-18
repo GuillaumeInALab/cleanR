@@ -24,5 +24,5 @@ A beautifully organized project folder
 
     * `organize("myProject")`
 
-    * `organize("myProject", proj = F)`
+    * `organize("myProject", proj = FALSE)`
 *Does not create a RStudio project*
