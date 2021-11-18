@@ -1,10 +1,10 @@
-#cleanR R Package
+# cleanR R Package
 
 > Creates a clean infrastructure with a classical folder organization to keep your R project tidy.
 
 A simple package to run before starting your project.
 
-It contains the single function `organise()` that works as follows:
+It contains the single function `organize()` that works as follows:
 
 - Usage
 `organize(path, proj = TRUE)`
