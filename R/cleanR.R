@@ -18,14 +18,13 @@ organize <- function(path, proj = TRUE){
  setwd(path)
  pathf <- getwd()
 
- nameMain <- paste(gsub("[[:space:]]","_",basename(path)),"_MainScript.Rmd", sep="")
- nameDoc <- paste("doc/",gsub("[[:space:]]","_",basename(path)),"_README.Rmd", sep="")
- configFile <- paste(basename(path),".config", sep="")
+ nameMain <- paste(gsub("[[:space:]]","_", basename(path)),"- MainScript.Rmd", sep = "")
+ nameDoc <- "README.Rmd"
+ configFile <- paste(basename(path),".config", sep = "")
 
  dir.create("data")
  dir.create("figures")
  dir.create("results")
- dir.create("doc")
 
  file.create(nameMain)
  file.create(nameDoc)
@@ -37,14 +36,9 @@ organize <- function(path, proj = TRUE){
  title: \"My New Project\"
  author: \"Guillaume P. Andrieu\"
  date: \"`r Sys.Date()`\"
- output:
- prettydoc::html_pretty:
-    theme: architect
-    toc: true
-    highlight: github
 ---
 
-Version 0.0.1
+Version 1.0.0
 
 **R version**: \"`r R.version.string`\"
 **Bioconductor version**: \"`r BiocManager::version()`\"
@@ -107,7 +101,7 @@ output:
   output: github_document
 ---
 
-Version 0.0.1
+Version 1.0.0
    ")
  sink()
 

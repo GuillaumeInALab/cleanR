@@ -1,28 +1,36 @@
-# cleanR R Package
+# cleanR
 
-> Creates a clean infrastructure with a classical folder organization to keep your R project tidy.
-
+Creates a clean infrastructure with a classical folder organization to keep your R project tidy.
 A simple package to run before starting your project.
 
-It contains the single function `organize()` that works as follows:
+## Installation
 
-- Usage
+`cleanR` can be installed directly from GitHub.
+
+```r
+install_packages("devtools")
+devtools::install_github("GuillaumeInALab/cleanR")
+```
+
+## Usage
+It contains the single function `organize()` that works as follows:
 
 `organize(path, proj = TRUE)`
 
-- Arguments
+**Arguments**
 
-`path`: Absolute or relative project path. If the directory does not exist, it will be created. Spaces will be replaced by a graceful underscore _ in the files names. Note that it is a (very) good practice to have no white space or weird characters in your project name
+`path`: Absolute or relative project path. If the directory does not exist, it will be created. Spaces will be replaced by a graceful underscore _ in the files names. Note that it is a (very) good practice to avoid white space or weird characters in your project name
 
 `proj`: A boolean. If `TRUE`, create a new RStudio project
 
-- Value
 
-A beautifully organized project folder
+## Examples
 
-- Examples
+```r
+organize("myProject")
 
-    * `organize("myProject")`
+#Does not create a RStudio project
+organize("myProject", proj = FALSE)
+```
 
-    * `organize("myProject", proj = FALSE)`
-*Does not create a RStudio project*
+
